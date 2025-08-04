@@ -2,3 +2,52 @@ baseURL = 'https://moeka.cc/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'blowfish'
+colorScheme = "ocean"
+disableImageOptimization = false
+defaultBackgroundImage = "image.jpg" # used as default for background images 
+
+
+[[main]]
+  name = "Posts"
+  pageRef = "posts"
+  weight = 10
+
+[[main]]-
+  name = "Tags"
+  pageRef = "tags"
+  weight = 30
+
+[author]
+   name = "もえか"
+   image = "profile.jpg"
+   headline = "梧桐枝桠生长，爱意贯穿心脏"
+   bio = "萌佳" # appears in author card for each article
+
+[homepage]
+  layout = "background" # valid options: page, profile, hero, card, background, custom
+  homepageImage = "image.jpg" # used in: hero, and card
+  showRecent = true
+  showRecentItems = 6
+  showMoreLink = true
+  showMoreLinkDest = "/posts"
+  cardView = true
+  cardViewScreenWidth = false
+  layoutBackgroundBlur = true # only used when layout equals background
+
+[header]
+  layout = "fixed"
+
+[article]
+  showHero = true
+  heroStyle = "background" 
+  showSummary = true
+  showTableOfContents = true
+  showRelatedContent = true
+  relatedContentLimit = 3
+
+[list]
+  showCards = true
+  groupByYear = false
+  cardView = true
+
+
