@@ -12,7 +12,7 @@ defaultBackgroundImage = "image.jpg" # used as default for background images
   pageRef = "posts"
   weight = 10
 
-[[main]]-
+[[main]]
   name = "Tags"
   pageRef = "tags"
   weight = 30
