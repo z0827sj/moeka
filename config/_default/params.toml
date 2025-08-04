@@ -16,7 +16,7 @@ defaultBackgroundImage = "image.jpg" # used as default for background images
    name = "もえか"
    image = "profile.jpg"
    headline = "梧桐枝桠生长，爱意贯穿心脏"
-   bio = "萌佳" # appears in author card for each article
+   bio = "萌佳🎨" # appears in author card for each article
 
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom

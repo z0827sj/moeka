@@ -1,6 +1,6 @@
 baseURL = 'https://moeka.cc/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Moeka blog'
 theme = 'blowfish'
 
 

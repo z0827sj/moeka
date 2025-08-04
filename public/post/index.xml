@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Moeka blog</title>
-    <link>https://moeka.cc/</link>
-    <description>Recent content on Moeka blog</description>
+    <title>Posts on Moeka blog</title>
+    <link>https://moeka.cc/post/</link>
+    <description>Recent content in Posts on Moeka blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 もえか</copyright>
-    <lastBuildDate>Sun, 03 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://moeka.cc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://moeka.cc/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>🦆什刹海の小风筝&amp;🏄‍♀️🏄‍♂️＆🎶</title>
