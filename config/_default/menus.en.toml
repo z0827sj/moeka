@@ -7,3 +7,14 @@
   name = "Tags"
   pageRef = "tags"
   weight = 30
+# config/_default/menus.toml
+
+[[subnavigation]]
+  name = "An interesting topic"
+  pageRef = "tags/interesting-topic"
+  weight = 10
+
+[[subnavigation]]
+  name = "My Awesome Category"
+  pageRef = "categories/awesome"
+  weight = 20

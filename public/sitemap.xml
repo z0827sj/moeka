@@ -3,23 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://moeka.cc/</loc>
     <lastmod>2025-08-03T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://moeka.cc/post/</loc>
     <lastmod>2025-08-03T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/post/8.3/</loc>
+    <loc>https://moeka.cc/post/8.3/</loc>
     <lastmod>2025-08-03T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/post/7.24/</loc>
+    <loc>https://moeka.cc/post/7.24/</loc>
     <lastmod>2025-07-24T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/post/7.16/</loc>
+    <loc>https://moeka.cc/post/7.16/</loc>
     <lastmod>2025-07-16T00:00:00+00:00</lastmod>
   </url>
 </urlset>
