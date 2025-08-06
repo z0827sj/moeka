@@ -1,0 +1,35 @@
+# config/_default/menus.toml
+
+[[main]]
+  name = "Parent"
+  weight = 20
+
+[[main]]
+  name = "sub-menu 1"
+  parent = "Parent"
+  pageRef = "samples"
+  weight = 20
+
+[[main]]
+  name = "sub-menu 2"
+  parent = "Parent"
+  pageRef = "samples"
+  weight = 20
+
+[[main]]
+  name = "sub-menu 3"
+  parent = "Parent"
+  pre = "github"
+  pageRef = "samples"
+  weight = 20
+
+
+[[subnavigation]]
+  name = "An interesting topic"
+  pageRef = "tags/interesting-topic"
+  weight = 10
+
+[[subnavigation]]
+  name = "My Awesome Category"
+  pageRef = "categories/awesome"
+  weight = 20

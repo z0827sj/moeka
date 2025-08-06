@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Moeka blog🐈</title>
-    <link>https://moeka.cc/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Moeka blog🐈</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 もえか</copyright>
-    <lastBuildDate>Sun, 03 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://moeka.cc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>🦆什刹海の小风筝&amp;🏄‍♀️🏄‍♂️＆🎶</title>
-      <link>https://moeka.cc/post/8.3/</link>
+      <link>http://localhost:1313/post/8.3/</link>
       <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://moeka.cc/post/8.3/</guid>
+      <guid>http://localhost:1313/post/8.3/</guid>
       <description>其实我们都不太懂实验音乐</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://moeka.cc/post/8.3/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/post/8.3/feature.jpg" />
     </item>
     
     <item>
       <title>VFSの烤🐟&amp;长安の荔枝</title>
-      <link>https://moeka.cc/post/7.24/</link>
+      <link>http://localhost:1313/post/7.24/</link>
       <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://moeka.cc/post/7.24/</guid>
+      <guid>http://localhost:1313/post/7.24/</guid>
       <description>今儿带了蓝色的帽子</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://moeka.cc/post/7.24/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/post/7.24/feature.jpg" />
     </item>
     
     <item>
       <title>动物园🦒&amp;白塔&amp;city walk</title>
-      <link>https://moeka.cc/post/7.16/</link>
+      <link>http://localhost:1313/post/7.16/</link>
       <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://moeka.cc/post/7.16/</guid>
+      <guid>http://localhost:1313/post/7.16/</guid>
       <description>红墙映白塔，古寺立斜阳</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://moeka.cc/post/7.16/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/post/7.16/feature.jpg" />
     </item>
     
   </channel>
