@@ -15,7 +15,7 @@ defaultBackgroundImage = "image.jpg" # used as default for background images
 [author]
    name = "もえか"
    image = "profile.jpg"
-   headline = "梧桐枝桠生长，爱意贯穿心脏"
+   headline = "我这边没有下雨，但心里早已泛起了涟漪"
    bio = "萌佳🎨" # appears in author card for each article
 
 [homepage]
