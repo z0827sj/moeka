@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>散步 on Moeka blog🐈</title>
+    <link>http://localhost:1313/tags/%E6%95%A3%E6%AD%A5/</link>
+    <description>Recent content in 散步 on Moeka blog🐈</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 もえか</copyright>
+    <lastBuildDate>Mon, 18 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%95%A3%E6%AD%A5/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>八一湖✨压马路🚶‍♀️🚶‍♂️</title>
+      <link>http://localhost:1313/posts/8.18/</link>
+      <pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/8.18/</guid>
+      <description>第一次有了📷来记录我们的日子</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/8.18/feature.jpg" />
+    </item>
+    
+  </channel>
+</rss>

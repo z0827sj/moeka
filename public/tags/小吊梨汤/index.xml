@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>小吊梨汤 on Moeka blog🐈</title>
+    <link>http://localhost:1313/tags/%E5%B0%8F%E5%90%8A%E6%A2%A8%E6%B1%A4/</link>
+    <description>Recent content in 小吊梨汤 on Moeka blog🐈</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 もえか</copyright>
+    <lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%B0%8F%E5%90%8A%E6%A2%A8%E6%B1%A4/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>🏓&amp;IKEA👩‍❤️‍💋‍👨</title>
+      <link>http://localhost:1313/posts/8.19/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/8.19/</guid>
+      <description>走走，躺躺，聊聊天👩‍❤️‍💋‍👨</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/8.19/feature.jpg" />
+    </item>
+    
+  </channel>
+</rss>
