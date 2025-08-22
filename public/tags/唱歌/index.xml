@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>唱歌 on Moeka blog🐈</title>
-    <link>http://localhost:1313/tags/%E5%94%B1%E6%AD%8C/</link>
+    <link>https://moeka.cc/tags/%E5%94%B1%E6%AD%8C/</link>
     <description>Recent content in 唱歌 on Moeka blog🐈</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 もえか</copyright>
-    <lastBuildDate>Tue, 12 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%94%B1%E6%AD%8C/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://moeka.cc/tags/%E5%94%B1%E6%AD%8C/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>🍱🥚在浪浪山上唱歌🎤</title>
-      <link>http://localhost:1313/posts/8.12/</link>
+      <link>https://moeka.cc/posts/8.12/</link>
       <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/8.12/</guid>
+      <guid>https://moeka.cc/posts/8.12/</guid>
       <description>拥有你的我，比国王富有🥰</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/8.12/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://moeka.cc/posts/8.12/feature.jpg" />
     </item>
     
   </channel>
