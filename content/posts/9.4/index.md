@@ -6,6 +6,7 @@ summary: "我现在只想看你的小纸条"
 tags: ["网站","萌佳"]
 ---
 
+```html
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -350,3 +351,4 @@ tags: ["网站","萌佳"]
     </script>
 </body>
 </html>
+```
