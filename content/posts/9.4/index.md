@@ -1,0 +1,352 @@
+---
+title: "萌佳の小纸条"
+date: 2025-09-04
+draft: false
+summary: "我现在只想看你的小纸条"
+tags: ["网站","萌佳"]
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心语瓶 - 异地恋纸条抽取机</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+        
+        header {
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #ff6b6b;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            color: #777;
+            font-size: 16px;
+        }
+        
+        .bottle-container {
+            position: relative;
+            height: 300px;
+            margin-bottom: 30px;
+        }
+        
+        .bottle {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 40px 40px 10px 10px;
+            border: 3px solid #ff9e9e;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .bottle-top {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 30px;
+            background: #ff9e9e;
+            border-radius: 10px;
+        }
+        
+        .papers {
+            position: relative;
+            height: 100%;
+            padding: 10px;
+        }
+        
+        .paper {
+            position: absolute;
+            background: #fff9c4;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.5s ease;
+        }
+        
+        .paper.selected {
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            width: 250px !important;
+            height: 150px !important;
+            z-index: 10;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .paper-content {
+            padding: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #5a3d2b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-weight: 500;
+        }
+        
+        .button {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+        
+        .button:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+        }
+        
+        .button:active {
+            transform: translateY(1px);
+        }
+        
+        .message {
+            margin-top: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #5a3d2b;
+            transition: all 0.5s ease;
+        }
+        
+        .heart {
+            position: absolute;
+            background: #ff6b6b;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            transform: rotate(-45deg);
+            opacity: 0;
+        }
+        
+        .heart:before, .heart:after {
+            content: "";
+            background: #ff6b6b;
+            border-radius: 50%;
+            height: 20px;
+            position: absolute;
+            width: 20px;
+        }
+        
+        .heart:before {
+            top: -10px;
+            left: 0;
+        }
+        
+        .heart:after {
+            left: 10px;
+            top: 0;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(5deg); }
+            100% { transform: translateY(0) rotate(0deg); }
+        }
+        
+        .bottle {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .message {
+            animation: fadeIn 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>心语瓶</h1>
+            <p class="subtitle">装满爱意的小纸条，随时温暖你的心</p >
+        </header>
+        
+        <div class="bottle-container">
+            <div class="bottle">
+                <div class="bottle-top"></div>
+                <div class="papers" id="papersContainer">
+                    <!-- 纸条将通过JS动态生成 -->
+                </div>
+            </div>
+        </div>
+        
+        <button class="button" id="drawButton">抽取纸条</button>
+        
+        <div class="message" id="message">
+            点击按钮，从瓶中抽取一张充满爱意的小纸条
+        </div>
+    </div>
+
+    <script>
+        // 纸条内容库
+        const messages = [
+            "I' m Yours",
+            "等到春暖艳阳天，你我就相见",
+            "期待下次见面时，给你一个大大的拥抱",
+            "你说，最暧昧的事情是写很多很多的纸条给对方",
+            "一首歌，1000x",
+            "Pebbling，人们时不时把尤其的短视频、图片或者可爱的小故事分享给所爱的人，就像一种企鹅喜欢再伴侣的巢穴中留一块鹅卵石。告诉它，我来过，我很关心你。",
+            "下雨了，我想你。艳阳天，我想你。每时每刻，我想你",
+            "今天你开心吗？有好好吃饭吗？有按时睡觉吗？有想我吗？",
+            "希望今晚你能出现在我的梦里",
+            "我在情感上的愚钝就像是门窗紧闭的屋子，虽然爱情的脚步在屋前走过来又走过去，我也听到了，可是我觉得那是路过的脚步，那是走向别人的脚步。直到有一天，这个脚步停留在这里，然后门铃响了——《第七天》",
+        ];
+        
+        const papersContainer = document.getElementById('papersContainer');
+        const drawButton = document.getElementById('drawButton');
+        const messageElement = document.getElementById('message');
+        
+        // 初始化瓶子中的纸条
+        function initPapers() {
+            papersContainer.innerHTML = '';
+            
+            for (let i = 0; i < 20; i++) {
+                const paper = document.createElement('div');
+                paper.className = 'paper';
+                
+                // 随机位置和大小
+                const width = 15 + Math.random() * 10;
+                const height = 20 + Math.random() * 10;
+                const left = 10 + Math.random() * 80;
+                const top = 20 + Math.random() * 150;
+                const rotation = -5 + Math.random() * 10;
+                
+                paper.style.width = `${width}px`;
+                paper.style.height = `${height}px`;
+                paper.style.left = `${left}%`;
+                paper.style.top = `${top}px`;
+                paper.style.transform = `rotate(${rotation}deg)`;
+                
+                // 随机颜色深浅
+                const hue = 50 + Math.random() * 10;
+                paper.style.backgroundColor = `hsl(${hue}, 80%, 85%)`;
+                
+                papersContainer.appendChild(paper);
+            }
+        }
+        
+        // 随机抽取一张纸条
+        function drawPaper() {
+            // 重置消息区域
+            messageElement.textContent = "正在抽取中...";
+            
+            // 随机选择一条消息
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            const selectedMessage = messages[randomIndex];
+            
+            // 获取所有纸条
+            const papers = document.querySelectorAll('.paper');
+            
+            // 随机选择一张纸条应用动画
+            const randomPaperIndex = Math.floor(Math.random() * papers.length);
+            const selectedPaper = papers[randomPaperIndex];
+            
+            // 添加选中类以触发动画
+            selectedPaper.classList.add('selected');
+            
+            // 延迟显示消息
+            setTimeout(() => {
+                messageElement.textContent = selectedMessage;
+                
+                // 创建漂浮的爱心
+                createHearts();
+            }, 1500);
+            
+            // 3秒后重置纸条
+            setTimeout(() => {
+                selectedPaper.classList.remove('selected');
+                initPapers();
+            }, 3000);
+        }
+        
+        // 创建漂浮的爱心效果
+        function createHearts() {
+            for (let i = 0; i < 10; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                
+                // 随机位置和大小
+                const size = 5 + Math.random() * 10;
+                const left = Math.random() * 100;
+                
+                heart.style.width = `${size}px`;
+                heart.style.height = `${size}px`;
+                heart.style.left = `${left}%`;
+                heart.style.bottom = '0';
+                
+                document.querySelector('.bottle-container').appendChild(heart);
+                
+                // 动画
+                const animationDuration = 2 + Math.random() * 2;
+                const animationDelay = Math.random() * 1;
+                
+                heart.style.animation = `
+                    fadeIn 0.5s ease-out ${animationDelay}s forwards,
+                    float ${animationDuration}s ease-in-out ${animationDelay}s infinite
+                `;
+                
+                // 移除元素
+                setTimeout(() => {
+                    heart.remove();
+                }, (animationDelay + animationDuration) * 1000);
+            }
+        }
+        
+        // 初始化
+        window.onload = function() {
+            initPapers();
+            drawButton.addEventListener('click', drawPaper);
+        };
+    </script>
+</body>
+</html>
